@@ -1,0 +1,129 @@
+.home_section {
+  display: flex;
+  padding: 70px 100px 0px 100px;
+}
+.left_homesection {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.para_capitals {
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--purple-color);
+}
+.left_homesection h1 {
+  font-family: var(--font-primary);
+  max-width: 600px;
+  font-size: 84px;
+  line-height: 89px;
+  letter-spacing: -3.36px;
+}
+.paragraph_home {
+  max-width: 420px;
+  font-size: var(--normal-fontsize);
+  font-weight: 400;
+  font-family: var(--font-secondary);
+}
+.left_homesection button {
+  width: 272px;
+  padding: 19px 75px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  color: var(--white-color);
+  font-weight: 700;
+  background: var(--primary-color);
+  cursor: pointer;
+}
+.left_homesection button:hover {
+  background: var(--white-color);
+  color: var(--primary-color);
+}
+.right_homesection {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.right_homesection img {
+  width: 529.016px;
+  height: 538.874px;
+}
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1350px) {
+  .home_section {
+    padding: 40px 50px;
+  }
+  .left_homesection {
+    width: 50%;
+  }
+  .left_homesection p {
+    font-size: 13px;
+    max-width: 85%;
+  }
+  .left_homesection h1 {
+    max-width: 100%;
+    font-size: 35px;
+    line-height: 49px;
+    letter-spacing: -2.36px;
+  }
+  .left_homesection button {
+    width: 172px;
+    padding: 15px 25px;
+    font-size: 13px;
+  }
+  .right_homesection {
+    width: 50%;
+  }
+  .right_homesection img {
+    width: 329.016px;
+    height: 338.874px;
+  }
+}
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+  .home_section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .left_homesection {
+    width: 100%;
+  }
+  .left_homesection h1 {
+    font-size: 84px;
+    max-width: 100%;
+  }
+  .right_homesection {
+    width: 100%;
+  }
+  .right_homesection img {
+    width: 329.016px;
+    height: 338.874px;
+    margin: 50px;
+  }
+}
+/* Laptops and desktops */
+@media only screen and (min-width: 1024px) {
+  .left_homesection h1 {
+    font-size: 84px;
+    max-width: 100%;
+    line-height: 89px;
+    letter-spacing: -4.36px;
+  }
+  .right_homesection {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .right_homesection img {
+    width: 529.016px;
+    height: 538.874px;
+  }
+}

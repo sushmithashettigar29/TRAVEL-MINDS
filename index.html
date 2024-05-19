@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Minds</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="/images/logo.png" type="image/icon type" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="destination.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="service.css" />
+    <link rel="stylesheet" href="booking.css" />
+    <link rel="stylesheet" href="testimonial.css" />
+    <link rel="stylesheet" href="feedback.css" />
+    <link rel="stylesheet" href="sponsers.css" />
+    <link rel="stylesheet" href="footer.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <img src="/images/logo.png" alt="logo" />
+      <div onclick="showSidebar()" class="menu_bar">
+        <a href="#"><i class="fa-solid fa-bars"></i></a>
+      </div>
+      <ul class="slider">
+        <li onclick="hideSidebar()">
+          <a href="#"><i class="fa-solid fa-x"></i></a>
+        </li>
+        <li onclick="hideSidebar()"><a href="#home">Home</a></li>
+        <li onclick="hideSidebar()">
+          <a href="#destinations">Destinations</a>
+        </li>
+        <li onclick="hideSidebar()"><a href="#services">Services</a></li>
+        <li onclick="hideSidebar()"><a href="#booking">Booking</a></li>
+        <li onclick="hideSidebar()"><a href="#contactus">Contact Us</a></li>
+      </ul>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#booking">Booking</a></li>
+      </ul>
+      <button><a href="#contactus">Contact Us</a></button>
+    </nav>
+    <!-- Hero section -->
+    <section id="home" class="home_section">
+      <div class="left_homesection">
+        <p class="para_capitals">Best Destinations around the world</p>
+        <h1>Travel, enjoy and live a new and full life</h1>
+        <p class="paragraph_home">
+          Built Wicket longer admire do barton vanity itself do in it. Preferred
+          to sportsmen it engrossed listening. Park gate sell they west hard for
+          the.
+        </p>
+        <button>Find out more</button>
+      </div>
+      <div class="right_homesection">
+        <img src="/images/hero_image.png" alt="" />
+      </div>
+    </section>
+    <!-- Destination section -->
+    <section id="destinations" class="destination_section">
+      <div class="destination_main">
+        <h1>Top Destinations</h1>
+        <div class="destination_img_box">
+          <div class="desti_img">
+            <img class="d_img" src="/images/Rome.png" alt="" />
+            <div class="desti_img_name">
+              <p>Rome, Italty</p>
+              <p>$5,42k</p>
+            </div>
+            <div class="duration">
+              <img src="/images/navigation.svg" alt="" />
+              <p>10 Days Trip</p>
+            </div>
+          </div>
+          <div class="desti_img">
+            <img class="d_img" src="/images/London.png" alt="" />
+            <div class="desti_img_name">
+              <p>London, UK</p>
+              <p>$4.2k</p>
+            </div>
+            <div class="duration">
+              <img src="/images/navigation.svg" alt="" />
+              <p>10 Days Trip</p>
+            </div>
+          </div>
+          <div class="desti_img">
+            <img class="d_img" src="/images/Europe.png" alt="" />
+            <div class="desti_img_name">
+              <p>Full Europe</p>
+              <p>$15k</p>
+            </div>
+            <div class="duration">
+              <img src="/images/navigation.svg" alt="" />
+              <p>10 Days Trip</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services section -->
+    <sectio id="services" class="service_section">
+      <div class="service_main">
+        <h1>We Offer Best Services</h1>
+        <div class="service_boxes">
+          <div class="service_box">
+            <img class="d_img" src="/images/weather-icon.png" alt="" />
+            <h4>Calculated Weather</h4>
+            <p>Built Wicket longer admire do barton vanity itself do in it.</p>
+          </div>
+          <div class="service_box">
+            <img class="d_img" src="/images/flight.png" alt="" />
+            <h4>Best Flights</h4>
+            <p>Engrossed listening. Park gate sell they west hard for the.</p>
+          </div>
+          <div class="service_box">
+            <img class="d_img" src="/images/events-logo.png" alt="" />
+            <h4>Local Events</h4>
+            <p>
+              Barton vanity itself do in it. Preferd to men it engrossed
+              listening.
+            </p>
+          </div>
+          <div class="service_box">
+            <img class="d_img" src="/images/customization-icon.png" alt="" />
+            <h4>Customization</h4>
+            <p>
+              We deliver outsourced aviation services for military customers
+            </p>
+          </div>
+        </div>
+      </div>
+    </sectio>
+    <!-- Booking section -->
+    <section id="booking" class="booking_section">
+      <div class="booking_main">
+        <div class="booking_left">
+          <h1>Book your next trip in 3 easy steps</h1>
+          <div class="booking_menus">
+            <div class="booking_menu">
+              <img src="/images/booking-logo-1.png" alt="" />
+              <div class="booking_menu_desc">
+                <h6>Choose Destination</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                  tortor tempus.
+                </p>
+              </div>
+            </div>
+            <div class="booking_menu">
+              <img src="/images/booking-logo-2.png" alt="" />
+              <div class="booking_menu_desc">
+                <h6>Make Payment</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                  tortor tempus.
+                </p>
+              </div>
+            </div>
+            <div class="booking_menu">
+              <img src="/images/booking-logo-3.png" alt="" />
+              <div class="booking_menu_desc">
+                <h6>Reach Airport on Selected Date</h6>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                  tortor tempus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button>Book Now</button>
+        </div>
+        <div class="booking_right">
+          <img src="/images/booking.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial section -->
+    <section class="testimonial_section">
+      <div class="testimonial_main">
+        <h1>What people say about Us.</h1>
+        <div class="testimonials">
+          <div class="testimonial">
+            <p>
+              “On the Windows talking painted pasture yet its express parties
+              use. Sure last upon he same as knew next. Of believed or diverted
+              no.”
+            </p>
+            <div class="testimonial_detail">
+              <div class="testi_name">
+                <p class="name">Mike taylor</p>
+                <p>Lahore, Pakistan</p>
+              </div>
+              <img src="/images/Mike-taylor.png" alt="" />
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>
+              “On the Windows talking painted pasture yet its express parties
+              use. Sure last upon he same as knew next. Of believed or diverted
+              no.”
+            </p>
+            <div class="testimonial_detail">
+              <div class="testi_name">
+                <p class="name">Mike taylor</p>
+                <p>Lahore, Pakistan</p>
+              </div>
+              <img src="/images/Mike-taylor.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- feebback section -->
+    <section class="contactus_section">
+      <div class="contactus_main">
+        <div class="contactus_left">
+          <h1>Share Your Feedback</h1>
+          <form>
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Place" />
+            <textarea
+              name=""
+              id="feedback"
+              placeholder="Feedback Message"
+              rows="5"
+            ></textarea>
+            <button>Send Feedback</button>
+          </form>
+        </div>
+        <div class="contactus_right">
+          <img src="/images/feedback-img.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Sponsers -->
+    <section class="sponsers_section">
+      <div class="sponsers_main">
+        <img src="/images/axon.png" alt="" />
+        <img src="/images/jetstar.png" alt="" />
+        <img src="/images/expedia.png" alt="" />
+        <img src="/images/jetstar.png" alt="" />
+        <img src="/images/expedia.png" alt="" />
+      </div>
+    </section>
+    <!-- footer section -->
+    <footer id="contactus" class="footer_section">
+      <div class="footer_main">
+        <div class="footer_upper">
+          <div class="footer_left">
+            <img src="/images/footer_logo.png" alt="logo" />
+            <p>Book your trip in minute, get full Control for much longer.</p>
+          </div>
+          <div class="footer_center">
+            <div class="center_div">
+              <h6>Company</h6>
+              <p>About</p>
+              <p>Careers</p>
+              <p>Mobile</p>
+            </div>
+            <div class="center_div">
+              <h6>Contact</h6>
+              <p>Help/FAQ</p>
+              <p>Press</p>
+              <p>Affilates</p>
+            </div>
+            <div class="center_div">
+              <h6>More</h6>
+              <p>Airlinefees</p>
+              <p>Airline</p>
+              <p>Low fare tips</p>
+            </div>
+          </div>
+          <div class="footer_right">
+            <div class="social_media">
+              <img src="/images/facebook.png" alt="" />
+              <img src="/images/instagram.png" alt="" />
+              <img src="/images/twitter.png" alt="" />
+            </div>
+            <div class="playstores">
+              <h6>Discover our app</h6>
+              <div class="playstore">
+                <img src="/images/Google_Play.png" alt="" />
+                <img src="/images/Apple_Store.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_lower">
+          <p>&copy;All rights reserved@travelminds.co</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

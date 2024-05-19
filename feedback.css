@@ -1,0 +1,119 @@
+.contactus_section {
+  display: flex;
+  padding: 100px 100px 0px 100px;
+}
+.contactus_main {
+  display: flex;
+  width: 100%;
+}
+.contactus_left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contactus_left h1 {
+  color: #000;
+  font-family: Volkhov;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+form input {
+  height: 78px;
+  font-size: 24px;
+  font-weight: 100;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-family: var(--font-secondary);
+}
+#feedback {
+  font-size: 24px;
+  font-weight: 100;
+  padding: 20px;
+  font-family: var(--font-secondary);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+form button {
+  width: 196px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--purple-color);
+  color: var(--white-color);
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+}
+form button:hover {
+  box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+}
+.contactus_right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1350px) {
+  .contactus_section {
+    padding: 40px 50px;
+  }
+  .contactus_main {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactus_left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactus_right {
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form {
+    width: 70%;
+  }
+}
+
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
+  .contactus_section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+  .contactus_main {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactus_left {
+    width: 100%;
+  }
+  .contactus_right {
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactus_right img {
+    width: 350px;
+  }
+}
